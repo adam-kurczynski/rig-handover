@@ -19,3 +19,5 @@ export type NightDigest = {
 };
 
 export type ReadNight = (runsDir: string, night: string) => NightDigest | null;
+
+export { readNight } from './index.js';
