@@ -14,8 +14,10 @@ in a shell this agent can run.
 2. Draft the split as a table: title · plan section · scope · done when · blocked by.
    One issue per unit of work.
 3. **Stop and show the table to the human.** Publish nothing until they approve it.
-4. Ask the human what every issue here must carry (fields, labels, wording), unless it is
-   already written down in this session or in the repo.
+4. Every issue in this repo carries:
+   - Label `plan:<plan-name>` (for example, `plan:morning-digest`).
+   - Opening line: `Source: plan.md § <n>`.
+   - Sections: `## Scope`, `## Done when`, and `## Blocked by` (citing `#n` or `—`).
 5. Create each issue in dependency order, so blocked-by can cite real numbers:
 
    ```sh
